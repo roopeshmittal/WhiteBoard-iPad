@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386a" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="mqg-11-kwU">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Main Collection View Controller-->
+        <scene sceneID="Mup-LQ-nEN">
+            <objects>
+                <collectionViewController storyboardIdentifier="CollectionViewController" id="mqg-11-kwU" customClass="MainCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mBs-1p-Jhv">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vXc-Fa-DlA">
+                            <size key="itemSize" width="300" height="260"/>
+                            <size key="headerReferenceSize" width="50" height="70"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="Cell" id="ZRx-0z-waa" customClass="CustomCell">
+                                <rect key="frame" x="20" y="90" width="170" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="260"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="ee4-ic-OP5" customClass="CollectionHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="70"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WhiteBoard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Erp-Ce-8Ak">
+                                    <rect key="frame" x="429" y="13" width="167" height="44"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSs-a9-FCV">
+                                    <rect key="frame" x="27" y="13" width="113" height="44"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <state key="normal" title="Create New">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="newAction:" destination="mqg-11-kwU" eventType="touchUpInside" id="APT-Jg-39v"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <connections>
+                                <outlet property="headerLabel" destination="Erp-Ce-8Ak" id="aDH-Ts-TrN"/>
+                                <outlet property="headerNewButton" destination="kSs-a9-FCV" id="bJg-YE-2Jf"/>
+                            </connections>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FooterView" id="1s6-Qn-w0T">
+                            <rect key="frame" x="0.0" y="245" width="768" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="mqg-11-kwU" id="Jer-AT-5J4"/>
+                            <outlet property="delegate" destination="mqg-11-kwU" id="fKw-Ei-5Di"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="cad-IC-N0N"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edV-Jm-Y1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1348" y="-1183"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="DrawingViewController" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5w-Np-tvo" userLabel="Drawing View" customClass="DrawingView">
+                                <rect key="frame" x="0.0" y="50" width="1024" height="974"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="top" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LCW-gb-H4j" userLabel="Tools View">
+                                <rect key="frame" x="44" y="-8" width="928" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc7-Kb-m4i" userLabel="RedButton">
+                                        <rect key="frame" x="386" y="12" width="44" height="44"/>
+                                        <state key="normal" image="redButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeRed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H0r-A7-tMB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0y-fX-grb" userLabel="GreenButton">
+                                        <rect key="frame" x="430" y="12" width="44" height="44"/>
+                                        <state key="normal" image="greenButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeGreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9VP-DJ-afA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5db-Y0-ESE" userLabel="BlueButton">
+                                        <rect key="frame" x="474" y="12" width="44" height="44"/>
+                                        <state key="normal" image="blueButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeBlue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tjy-fe-Ugy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omP-SV-7Me" userLabel="BlackButton">
+                                        <rect key="frame" x="342" y="12" width="44" height="44"/>
+                                        <state key="normal" image="blackButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeBlack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l2f-C3-Wlq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeo-te-Ze0" userLabel="YellowButton">
+                                        <rect key="frame" x="518" y="12" width="44" height="44"/>
+                                        <state key="normal" image="YellowButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeYellow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Vc-Pc-hAY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uph-3Y-frJ" userLabel="GreyButton">
+                                        <rect key="frame" x="562" y="12" width="44" height="44"/>
+                                        <state key="normal" image="GrayButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeGray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Q8-eF-yRV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOc-FE-p45" userLabel="OrangeButton">
+                                        <rect key="frame" x="606" y="12" width="44" height="44"/>
+                                        <state key="normal" image="OrangeButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeOrange:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TST-eY-L54"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVU-c0-f3A" userLabel="BrownButton">
+                                        <rect key="frame" x="650" y="12" width="44" height="44"/>
+                                        <state key="normal" image="BrownButton.png"/>
+                                        <connections>
+                                            <action selector="setStrokeBrown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHW-bV-OOS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-Ld-6ZF" userLabel="SaveButton">
+                                        <rect key="frame" x="62" y="12" width="44" height="44"/>
+                                        <state key="normal" image="save.png"/>
+                                        <connections>
+                                            <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yO4-PS-XGC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-gu-OTu" userLabel="SaveButton">
+                                        <rect key="frame" x="10" y="12" width="44" height="44"/>
+                                        <state key="normal" image="homeButton.png"/>
+                                        <connections>
+                                            <action selector="homeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxg-i0-i0A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Two-nd-q0c" userLabel="UndoButton">
+                                        <rect key="frame" x="139" y="12" width="44" height="44"/>
+                                        <state key="normal" image="undo.png"/>
+                                        <connections>
+                                            <action selector="undoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Da-pr-nF8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMZ-IH-JJY" userLabel="EraserButton">
+                                        <rect key="frame" x="247" y="12" width="44" height="44"/>
+                                        <state key="normal" image="Eraser.png"/>
+                                        <connections>
+                                            <action selector="setStrokeEraser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jcO-tr-91V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Clj-I8-U7B" userLabel="RedoButton">
+                                        <rect key="frame" x="191" y="12" width="44" height="44"/>
+                                        <state key="normal" image="redoButton.png"/>
+                                        <connections>
+                                            <action selector="redoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdv-UE-UhO"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="7" translatesAutoresizingMaskIntoConstraints="NO" id="5S8-ph-j4t">
+                                        <rect key="frame" x="727" y="17" width="181" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="hAl-UV-fqc"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="0.53000000000000003" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="drawingView" destination="B5w-Np-tvo" id="oZH-Ei-e9X"/>
+                        <outlet property="slider" destination="5S8-ph-j4t" id="Fwv-Wu-z8I"/>
+                        <outlet property="toolsView" destination="LCW-gb-H4j" id="s2j-wD-POm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="-1183"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BrownButton.png" width="44" height="44"/>
+        <image name="Eraser.png" width="256" height="256"/>
+        <image name="GrayButton.png" width="44" height="44"/>
+        <image name="OrangeButton.png" width="44" height="44"/>
+        <image name="YellowButton.png" width="44" height="44"/>
+        <image name="blackButton.png" width="44" height="44"/>
+        <image name="blueButton.png" width="44" height="44"/>
+        <image name="greenButton.png" width="44" height="44"/>
+        <image name="homeButton.png" width="50" height="50"/>
+        <image name="redButton.png" width="44" height="44"/>
+        <image name="redoButton.png" width="50" height="50"/>
+        <image name="save.png" width="50" height="50"/>
+        <image name="undo.png" width="50" height="50"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7E7198E199C916E00AC687C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E7198D199C916E00AC687C /* Foundation.framework */; };
+		D7E71990199C916E00AC687C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E7198F199C916E00AC687C /* CoreGraphics.framework */; };
+		D7E71992199C916E00AC687C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E71991199C916E00AC687C /* UIKit.framework */; };
+		D7E71998199C916E00AC687C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7E71996199C916E00AC687C /* InfoPlist.strings */; };
+		D7E7199A199C916E00AC687C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E71999199C916E00AC687C /* main.m */; };
+		D7E719A6199C916E00AC687C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E719A5199C916E00AC687C /* Images.xcassets */; };
+		D7E719AD199C916E00AC687C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E719AC199C916E00AC687C /* XCTest.framework */; };
+		D7E719AE199C916E00AC687C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E7198D199C916E00AC687C /* Foundation.framework */; };
+		D7E719AF199C916E00AC687C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E71991199C916E00AC687C /* UIKit.framework */; };
+		D7E719B7199C916E00AC687C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7E719B5199C916E00AC687C /* InfoPlist.strings */; };
+		D7E719B9199C916E00AC687C /* DrawingPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E719B8199C916E00AC687C /* DrawingPadTests.m */; };
+		EA58363B19E7DB58003B6500 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58363A19E7DB58003B6500 /* AppDelegate.m */; };
+		EA58364219E7DB6E003B6500 /* DrawingBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58363D19E7DB6E003B6500 /* DrawingBezierPath.m */; };
+		EA58364319E7DB6E003B6500 /* DrawingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58363F19E7DB6E003B6500 /* DrawingImage.m */; };
+		EA58364419E7DB6E003B6500 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58364119E7DB6E003B6500 /* NSMutableArray+Stack.m */; };
+		EA58364E19E7DB84003B6500 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58364619E7DB84003B6500 /* CollectionHeaderView.m */; };
+		EA58364F19E7DB84003B6500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA58364719E7DB84003B6500 /* Main.storyboard */; };
+		EA58365019E7DB84003B6500 /* MainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58364919E7DB84003B6500 /* MainCollectionViewController.m */; };
+		EA58365119E7DB84003B6500 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58364B19E7DB84003B6500 /* MainViewController.m */; };
+		EA58365819E7DBC3003B6500 /* DrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA58365719E7DBC3003B6500 /* DrawingView.m */; };
+		EA58366619E7DC15003B6500 /* blackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58365919E7DC15003B6500 /* blackButton.png */; };
+		EA58366719E7DC15003B6500 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58365A19E7DC15003B6500 /* blueButton.png */; };
+		EA58366819E7DC15003B6500 /* BrownButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58365B19E7DC15003B6500 /* BrownButton.png */; };
+		EA58366919E7DC15003B6500 /* eraser.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58365C19E7DC15003B6500 /* eraser.png */; };
+		EA58366A19E7DC15003B6500 /* GrayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58365D19E7DC15003B6500 /* GrayButton.png */; };
+		EA58366B19E7DC15003B6500 /* greenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58365E19E7DC15003B6500 /* greenButton.png */; };
+		EA58366C19E7DC15003B6500 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EA58365F19E7DC15003B6500 /* images.jpeg */; };
+		EA58366D19E7DC15003B6500 /* OrangeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58366019E7DC15003B6500 /* OrangeButton.png */; };
+		EA58366E19E7DC15003B6500 /* redButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58366119E7DC15003B6500 /* redButton.png */; };
+		EA58366F19E7DC15003B6500 /* redoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58366219E7DC15003B6500 /* redoButton.png */; };
+		EA58367019E7DC15003B6500 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58366319E7DC15003B6500 /* save.png */; };
+		EA58367119E7DC15003B6500 /* undo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58366419E7DC15003B6500 /* undo.png */; };
+		EA58367219E7DC15003B6500 /* YellowButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58366519E7DC15003B6500 /* YellowButton.png */; };
+		EA58367419E7E990003B6500 /* homeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58367319E7E990003B6500 /* homeButton.png */; };
+		EA58367A19E80115003B6500 /* cardbgbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58367819E80115003B6500 /* cardbgbox.png */; };
+		EA58367B19E80115003B6500 /* cardbgbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA58367919E80115003B6500 /* cardbgbox@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7E719B0199C916E00AC687C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7E71982199C916D00AC687C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7E71989199C916E00AC687C;
+			remoteInfo = DrawingPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7E7198A199C916E00AC687C /* DrawingPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E7198D199C916E00AC687C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7E7198F199C916E00AC687C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7E71991199C916E00AC687C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D7E71995199C916E00AC687C /* DrawingPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingPad-Info.plist"; sourceTree = "<group>"; };
+		D7E71997199C916E00AC687C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7E71999199C916E00AC687C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7E7199B199C916E00AC687C /* DrawingPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawingPad-Prefix.pch"; sourceTree = "<group>"; };
+		D7E719A5199C916E00AC687C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D7E719AB199C916E00AC687C /* DrawingPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E719AC199C916E00AC687C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D7E719B4199C916E00AC687C /* DrawingPadTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawingPadTests-Info.plist"; sourceTree = "<group>"; };
+		D7E719B6199C916E00AC687C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D7E719B8199C916E00AC687C /* DrawingPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingPadTests.m; sourceTree = "<group>"; };
+		EA58363919E7DB58003B6500 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Core/AppDelegate.h; sourceTree = "<group>"; };
+		EA58363A19E7DB58003B6500 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Core/AppDelegate.m; sourceTree = "<group>"; };
+		EA58363C19E7DB6E003B6500 /* DrawingBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawingBezierPath.h; path = Core/DrawingBezierPath.h; sourceTree = "<group>"; };
+		EA58363D19E7DB6E003B6500 /* DrawingBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawingBezierPath.m; path = Core/DrawingBezierPath.m; sourceTree = "<group>"; };
+		EA58363E19E7DB6E003B6500 /* DrawingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawingImage.h; path = Core/DrawingImage.h; sourceTree = "<group>"; };
+		EA58363F19E7DB6E003B6500 /* DrawingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawingImage.m; path = Core/DrawingImage.m; sourceTree = "<group>"; };
+		EA58364019E7DB6E003B6500 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Stack.h"; path = "Core/NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		EA58364119E7DB6E003B6500 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Stack.m"; path = "Core/NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		EA58364519E7DB84003B6500 /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionHeaderView.h; path = UserInteface/CollectionHeaderView.h; sourceTree = "<group>"; };
+		EA58364619E7DB84003B6500 /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionHeaderView.m; path = UserInteface/CollectionHeaderView.m; sourceTree = "<group>"; };
+		EA58364719E7DB84003B6500 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = UserInteface/Main.storyboard; sourceTree = "<group>"; };
+		EA58364819E7DB84003B6500 /* MainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainCollectionViewController.h; path = UserInteface/MainCollectionViewController.h; sourceTree = "<group>"; };
+		EA58364919E7DB84003B6500 /* MainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainCollectionViewController.m; path = UserInteface/MainCollectionViewController.m; sourceTree = "<group>"; };
+		EA58364A19E7DB84003B6500 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = UserInteface/MainViewController.h; sourceTree = "<group>"; };
+		EA58364B19E7DB84003B6500 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = UserInteface/MainViewController.m; sourceTree = "<group>"; };
+		EA58365619E7DBC3003B6500 /* DrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrawingView.h; path = UserInteface/DrawingView.h; sourceTree = "<group>"; };
+		EA58365719E7DBC3003B6500 /* DrawingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrawingView.m; path = UserInteface/DrawingView.m; sourceTree = "<group>"; };
+		EA58365919E7DC15003B6500 /* blackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackButton.png; path = Images/blackButton.png; sourceTree = "<group>"; };
+		EA58365A19E7DC15003B6500 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blueButton.png; path = Images/blueButton.png; sourceTree = "<group>"; };
+		EA58365B19E7DC15003B6500 /* BrownButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BrownButton.png; path = Images/BrownButton.png; sourceTree = "<group>"; };
+		EA58365C19E7DC15003B6500 /* eraser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = eraser.png; path = Images/eraser.png; sourceTree = "<group>"; };
+		EA58365D19E7DC15003B6500 /* GrayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrayButton.png; path = Images/GrayButton.png; sourceTree = "<group>"; };
+		EA58365E19E7DC15003B6500 /* greenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenButton.png; path = Images/greenButton.png; sourceTree = "<group>"; };
+		EA58365F19E7DC15003B6500 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = Images/images.jpeg; sourceTree = "<group>"; };
+		EA58366019E7DC15003B6500 /* OrangeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OrangeButton.png; path = Images/OrangeButton.png; sourceTree = "<group>"; };
+		EA58366119E7DC15003B6500 /* redButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redButton.png; path = Images/redButton.png; sourceTree = "<group>"; };
+		EA58366219E7DC15003B6500 /* redoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redoButton.png; path = Images/redoButton.png; sourceTree = "<group>"; };
+		EA58366319E7DC15003B6500 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save.png; path = Images/save.png; sourceTree = "<group>"; };
+		EA58366419E7DC15003B6500 /* undo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = undo.png; path = Images/undo.png; sourceTree = "<group>"; };
+		EA58366519E7DC15003B6500 /* YellowButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = YellowButton.png; path = Images/YellowButton.png; sourceTree = "<group>"; };
+		EA58367319E7E990003B6500 /* homeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homeButton.png; path = Images/homeButton.png; sourceTree = "<group>"; };
+		EA58367819E80115003B6500 /* cardbgbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cardbgbox.png; path = Images/cardbgbox.png; sourceTree = "<group>"; };
+		EA58367919E80115003B6500 /* cardbgbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cardbgbox@2x.png"; path = "Images/cardbgbox@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7E71987199C916E00AC687C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E71990199C916E00AC687C /* CoreGraphics.framework in Frameworks */,
+				D7E71992199C916E00AC687C /* UIKit.framework in Frameworks */,
+				D7E7198E199C916E00AC687C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E719A8199C916E00AC687C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E719AD199C916E00AC687C /* XCTest.framework in Frameworks */,
+				D7E719AF199C916E00AC687C /* UIKit.framework in Frameworks */,
+				D7E719AE199C916E00AC687C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D75B8DFF19D160B20054BB4A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D75B8E0019D160BB0054BB4A /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D75B8E0019D160BB0054BB4A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EA58367819E80115003B6500 /* cardbgbox.png */,
+				EA58367919E80115003B6500 /* cardbgbox@2x.png */,
+				EA58367319E7E990003B6500 /* homeButton.png */,
+				EA58365919E7DC15003B6500 /* blackButton.png */,
+				EA58365A19E7DC15003B6500 /* blueButton.png */,
+				EA58365B19E7DC15003B6500 /* BrownButton.png */,
+				EA58365C19E7DC15003B6500 /* eraser.png */,
+				EA58365D19E7DC15003B6500 /* GrayButton.png */,
+				EA58365E19E7DC15003B6500 /* greenButton.png */,
+				EA58365F19E7DC15003B6500 /* images.jpeg */,
+				EA58366019E7DC15003B6500 /* OrangeButton.png */,
+				EA58366119E7DC15003B6500 /* redButton.png */,
+				EA58366219E7DC15003B6500 /* redoButton.png */,
+				EA58366319E7DC15003B6500 /* save.png */,
+				EA58366419E7DC15003B6500 /* undo.png */,
+				EA58366519E7DC15003B6500 /* YellowButton.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D7E71981199C916D00AC687C = {
+			isa = PBXGroup;
+			children = (
+				D7E71993199C916E00AC687C /* DrawingPad */,
+				D7E719B2199C916E00AC687C /* DrawingPadTests */,
+				D7E7198C199C916E00AC687C /* Frameworks */,
+				D7E7198B199C916E00AC687C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7E7198B199C916E00AC687C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7E7198A199C916E00AC687C /* DrawingPad.app */,
+				D7E719AB199C916E00AC687C /* DrawingPadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7E7198C199C916E00AC687C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7E7198D199C916E00AC687C /* Foundation.framework */,
+				D7E7198F199C916E00AC687C /* CoreGraphics.framework */,
+				D7E71991199C916E00AC687C /* UIKit.framework */,
+				D7E719AC199C916E00AC687C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7E71993199C916E00AC687C /* DrawingPad */ = {
+			isa = PBXGroup;
+			children = (
+				EA81BC8719E3C66A007FA82E /* Core */,
+				EA81BC8619E3C632007FA82E /* UserInterface */,
+				D75B8DFF19D160B20054BB4A /* Resources */,
+				D7E719A5199C916E00AC687C /* Images.xcassets */,
+				D7E71994199C916E00AC687C /* Supporting Files */,
+			);
+			path = DrawingPad;
+			sourceTree = "<group>";
+		};
+		D7E71994199C916E00AC687C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7E71995199C916E00AC687C /* DrawingPad-Info.plist */,
+				D7E71996199C916E00AC687C /* InfoPlist.strings */,
+				D7E71999199C916E00AC687C /* main.m */,
+				D7E7199B199C916E00AC687C /* DrawingPad-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7E719B2199C916E00AC687C /* DrawingPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7E719B8199C916E00AC687C /* DrawingPadTests.m */,
+				D7E719B3199C916E00AC687C /* Supporting Files */,
+			);
+			path = DrawingPadTests;
+			sourceTree = "<group>";
+		};
+		D7E719B3199C916E00AC687C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7E719B4199C916E00AC687C /* DrawingPadTests-Info.plist */,
+				D7E719B5199C916E00AC687C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA81BC8619E3C632007FA82E /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				EA58364719E7DB84003B6500 /* Main.storyboard */,
+				EA58364519E7DB84003B6500 /* CollectionHeaderView.h */,
+				EA58364619E7DB84003B6500 /* CollectionHeaderView.m */,
+				EA58364819E7DB84003B6500 /* MainCollectionViewController.h */,
+				EA58364919E7DB84003B6500 /* MainCollectionViewController.m */,
+				EA58364A19E7DB84003B6500 /* MainViewController.h */,
+				EA58364B19E7DB84003B6500 /* MainViewController.m */,
+				EA58365619E7DBC3003B6500 /* DrawingView.h */,
+				EA58365719E7DBC3003B6500 /* DrawingView.m */,
+			);
+			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		EA81BC8719E3C66A007FA82E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EA58363C19E7DB6E003B6500 /* DrawingBezierPath.h */,
+				EA58363D19E7DB6E003B6500 /* DrawingBezierPath.m */,
+				EA58363E19E7DB6E003B6500 /* DrawingImage.h */,
+				EA58363F19E7DB6E003B6500 /* DrawingImage.m */,
+				EA58364019E7DB6E003B6500 /* NSMutableArray+Stack.h */,
+				EA58364119E7DB6E003B6500 /* NSMutableArray+Stack.m */,
+				EA58363919E7DB58003B6500 /* AppDelegate.h */,
+				EA58363A19E7DB58003B6500 /* AppDelegate.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7E71989199C916E00AC687C /* DrawingPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E719BC199C916E00AC687C /* Build configuration list for PBXNativeTarget "DrawingPad" */;
+			buildPhases = (
+				D7E71986199C916E00AC687C /* Sources */,
+				D7E71987199C916E00AC687C /* Frameworks */,
+				D7E71988199C916E00AC687C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawingPad;
+			productName = DrawingPad;
+			productReference = D7E7198A199C916E00AC687C /* DrawingPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7E719AA199C916E00AC687C /* DrawingPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7E719BF199C916E00AC687C /* Build configuration list for PBXNativeTarget "DrawingPadTests" */;
+			buildPhases = (
+				D7E719A7199C916E00AC687C /* Sources */,
+				D7E719A8199C916E00AC687C /* Frameworks */,
+				D7E719A9199C916E00AC687C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7E719B1199C916E00AC687C /* PBXTargetDependency */,
+			);
+			name = DrawingPadTests;
+			productName = DrawingPadTests;
+			productReference = D7E719AB199C916E00AC687C /* DrawingPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7E71982199C916D00AC687C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Nagarro;
+				TargetAttributes = {
+					D7E71989199C916E00AC687C = {
+						DevelopmentTeam = RQ8777VBZ5;
+					};
+					D7E719AA199C916E00AC687C = {
+						TestTargetID = D7E71989199C916E00AC687C;
+					};
+				};
+			};
+			buildConfigurationList = D7E71985199C916D00AC687C /* Build configuration list for PBXProject "DrawingPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7E71981199C916D00AC687C;
+			productRefGroup = D7E7198B199C916E00AC687C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7E71989199C916E00AC687C /* DrawingPad */,
+				D7E719AA199C916E00AC687C /* DrawingPadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7E71988199C916E00AC687C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA58366A19E7DC15003B6500 /* GrayButton.png in Resources */,
+				EA58366C19E7DC15003B6500 /* images.jpeg in Resources */,
+				EA58366819E7DC15003B6500 /* BrownButton.png in Resources */,
+				EA58366919E7DC15003B6500 /* eraser.png in Resources */,
+				EA58366719E7DC15003B6500 /* blueButton.png in Resources */,
+				D7E719A6199C916E00AC687C /* Images.xcassets in Resources */,
+				D7E71998199C916E00AC687C /* InfoPlist.strings in Resources */,
+				EA58364F19E7DB84003B6500 /* Main.storyboard in Resources */,
+				EA58366619E7DC15003B6500 /* blackButton.png in Resources */,
+				EA58366D19E7DC15003B6500 /* OrangeButton.png in Resources */,
+				EA58367419E7E990003B6500 /* homeButton.png in Resources */,
+				EA58366B19E7DC15003B6500 /* greenButton.png in Resources */,
+				EA58367219E7DC15003B6500 /* YellowButton.png in Resources */,
+				EA58367119E7DC15003B6500 /* undo.png in Resources */,
+				EA58367A19E80115003B6500 /* cardbgbox.png in Resources */,
+				EA58366F19E7DC15003B6500 /* redoButton.png in Resources */,
+				EA58367019E7DC15003B6500 /* save.png in Resources */,
+				EA58366E19E7DC15003B6500 /* redButton.png in Resources */,
+				EA58367B19E80115003B6500 /* cardbgbox@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E719A9199C916E00AC687C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E719B7199C916E00AC687C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7E71986199C916E00AC687C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA58364419E7DB6E003B6500 /* NSMutableArray+Stack.m in Sources */,
+				EA58364E19E7DB84003B6500 /* CollectionHeaderView.m in Sources */,
+				EA58365819E7DBC3003B6500 /* DrawingView.m in Sources */,
+				EA58364319E7DB6E003B6500 /* DrawingImage.m in Sources */,
+				EA58365119E7DB84003B6500 /* MainViewController.m in Sources */,
+				D7E7199A199C916E00AC687C /* main.m in Sources */,
+				EA58363B19E7DB58003B6500 /* AppDelegate.m in Sources */,
+				EA58364219E7DB6E003B6500 /* DrawingBezierPath.m in Sources */,
+				EA58365019E7DB84003B6500 /* MainCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E719A7199C916E00AC687C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7E719B9199C916E00AC687C /* DrawingPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7E719B1199C916E00AC687C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7E71989199C916E00AC687C /* DrawingPad */;
+			targetProxy = D7E719B0199C916E00AC687C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7E71996199C916E00AC687C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E71997199C916E00AC687C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D7E719B5199C916E00AC687C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7E719B6199C916E00AC687C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7E719BA199C916E00AC687C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D7E719BB199C916E00AC687C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7E719BD199C916E00AC687C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingPad/DrawingPad-Prefix.pch";
+				INFOPLIST_FILE = "DrawingPad/DrawingPad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D7E719BE199C916E00AC687C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingPad/DrawingPad-Prefix.pch";
+				INFOPLIST_FILE = "DrawingPad/DrawingPad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D7E719C0199C916E00AC687C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawingPad.app/DrawingPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingPad/DrawingPad-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DrawingPadTests/DrawingPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D7E719C1199C916E00AC687C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DrawingPad.app/DrawingPad";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawingPad/DrawingPad-Prefix.pch";
+				INFOPLIST_FILE = "DrawingPadTests/DrawingPadTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7E71985199C916D00AC687C /* Build configuration list for PBXProject "DrawingPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E719BA199C916E00AC687C /* Debug */,
+				D7E719BB199C916E00AC687C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E719BC199C916E00AC687C /* Build configuration list for PBXNativeTarget "DrawingPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E719BD199C916E00AC687C /* Debug */,
+				D7E719BE199C916E00AC687C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E719BF199C916E00AC687C /* Build configuration list for PBXNativeTarget "DrawingPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E719C0199C916E00AC687C /* Debug */,
+				D7E719C1199C916E00AC687C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7E71982199C916D00AC687C /* Project object */;
+}
